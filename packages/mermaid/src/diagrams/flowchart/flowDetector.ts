@@ -11,7 +11,7 @@ const detector: DiagramDetector = (txt, config) => {
   if (config?.flowchart?.defaultRenderer === 'elk') {
     return false;
   }
-  return txt.match(/^\s*graph/) !== null;
+  return txt.match(/^\s*flowchart/) !== null;
 };
 
 const loader = async () => {
